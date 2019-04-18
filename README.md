@@ -11,8 +11,7 @@
 |                                | 第 3 章  Netty 的组件和设计              | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch3.md) |
 |                                | 第 4 章 传输                             | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch4.md) |
 |                                | 第 5 章 ByteBuf                          | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch5.md) |
-|                                | 第 6 章 ChannelHandler 和
-ChannelPipeline | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch6.md) |
+|                                | 第 6 章 ChannelHandler 和ChannelPipeline | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch6.md) |
 
 > 持续更新中……
 
