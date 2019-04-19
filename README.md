@@ -12,6 +12,8 @@
 |                                | 第 4 章 传输                             | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch4.md) |
 |                                | 第 5 章 ByteBuf                          | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch5.md) |
 |                                | 第 6 章 ChannelHandler 和ChannelPipeline | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch6.md) |
+|                                | 第 7 章  EventLoop 和线程模型            | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch7.md) |
+|                                | 第 8 章 引导                             | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch8.md) |
 
 > 持续更新中……
 

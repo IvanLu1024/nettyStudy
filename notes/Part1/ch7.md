@@ -63,8 +63,7 @@ executor.shutdown();
 
 ### 使用 EventLoop 调度任务
 
-ScheduledExecutorService 的实现具有局限性，例如，事实上作为线程池管理的一部
-分，将会有额外的线程创建。如果有大量任务被紧凑地调度，那么这将成为一个瓶颈。Netty 通过 Channel 的 EventLoop 实现任务调度解决了这一问题，Netty的EventLoop扩展了ScheduledExecutorService。
+ScheduledExecutorService 的实现具有局限性，例如，事实上作为线程池管理的一部分，将会有额外的线程创建。如果有大量任务被紧凑地调度，那么这将成为一个瓶颈。Netty 通过 Channel 的 EventLoop 实现任务调度解决了这一问题，Netty的EventLoop扩展了ScheduledExecutorService。
 
 ## 四、实现细节
 
@@ -97,4 +96,3 @@ EventLoopGroup 负责为每个新创建的 Channel 分配一个 EventLoop。在�
 <img src="https://ws1.sinaimg.cn/mw690/b7cbe24fly1g273rxb1agj20jc081t9y.jpg"/>
 
 但是，正如同之前一样，得到的保证是每个 Channel 的 I/O 事件都将只会被一个 Thread（用于支撑该 Channel 的 EventLoop 的那个 Thread）处理。这也是另一个 Netty 设计一致性的例子，它（这种设计上的一致性）对 Netty 的可靠性和易用性做出了巨大贡献。
-
