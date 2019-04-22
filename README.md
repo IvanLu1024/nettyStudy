@@ -14,6 +14,7 @@
 |                                | 第 6 章 ChannelHandler 和ChannelPipeline | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch6.md) |
 |                                | 第 7 章  EventLoop 和线程模型            | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch7.md) |
 |                                | 第 8 章 引导                             | 无                                                           | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch8.md) |
+|                                | 第 9 章 单元测试                         | [查看](https://github.com/IvanLu1024/nettyStudy/tree/master/src/main/java/chapter9) | [查看](https://github.com/IvanLu1024/nettyStudy/blob/master/notes/Part1/ch9.md) |
 
 > 持续更新中……
 
