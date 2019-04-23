@@ -9,6 +9,8 @@ JDK1.4以后引入了NIO包，即非阻塞IO。NIO利用选择器（Selector）�
 - 减少了线程使用的数量，因而减少了内存管理和上下文切换所带来的开销；
 - 将线程从IO阻塞的过程中释放出来，使得在没有IO处理的时候，线程可以处理其他任务。
 
+有关于Java NIO的详细讲解可以看[这儿](https://github.com/DuHouAn/Java/blob/master/JavaIO/notes/06NIO.md)
+
 ## Netty简介
 
 Netty是Java在网络编程领域一种卓越的框架，在设计、易用性、性能、健壮性、安全性和社区驱动等方面具有诸多优势，其特点可以概括为：

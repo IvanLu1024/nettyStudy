@@ -13,11 +13,11 @@ Netty解决了下面两个领域的问题：
 - EventLoop：控制流、多线程处理、并发；
 - ChannelFuture：异步通知。
 
-### Channel
+### Channel接口
 
 一个接口，是与网络套接字（Socket）或能够执行I / O操作（如读取，写入，连接和绑定）的组件的连接，**并且所有I/O操作都是异步的**，封装了Socket，降低了使用的复杂性。
 
-### EventLoop 
+### EventLoop 接口
 
 用于处理连接的生命周期中所发生的时间，如图所示：
 
