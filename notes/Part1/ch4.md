@@ -8,7 +8,7 @@
 
 每个 Channel 都将会被分配一个 ChannelPipeline 和 ChannelConfig。ChannelConfig 包含了该 Channel 的所有配置设置，并且支持热更新。**为了保证Channel 的唯一性**，所以继承了Comparable接口，当两个不同的Channel实例都返回了相同的HashCode，则会抛出一个Error。
 
-ChannelPipeline 持有所有将应用于入站和出站数据以及事件的 ChannelHandler 实例，这些 ChannelHandler 实现了应用程序用于处理状态变化以及数据处理的逻辑。除了访问所分配的 ChannelPipeline 和 ChannelConfig 之外，Channel的其他重要方法如下：
+ChannelPipeline 持有**所有**将应用于入站和出站数据以及事件的 ChannelHandler 实例，这些 ChannelHandler 实现了应用程序用于处理状态变化以及数据处理的逻辑。除了访问所分配的 ChannelPipeline 和 ChannelConfig 之外，Channel的其他重要方法如下：
 
 | 方法          | 描述                                                         |
 | ------------- | ------------------------------------------------------------ |
@@ -38,12 +38,14 @@ ChannelHandler 实现时非常有用 |
 
 ### NIO
 
-是一种全异步的实现，基于选择器的机制。选择器充当一个注册表，当Channel状态发生变化的时候会得到通知，可能的状态变化：
+是一种非阻塞IO，基于选择器的机制。选择器充当一个注册表，当Channel状态发生变化的时候会得到通知，可能的状态变化：
 
 - 新的 Channel 已被接受并且就绪；
 - Channel 连接已经完成；
 - Channel 有已经就绪的可供读取的数据；
 - Channel 可用于写数据。
+
+选择器由一个线程专门负责检查状态变化并对其做出相应响应。
 
 其处理流程如下图所示：
 

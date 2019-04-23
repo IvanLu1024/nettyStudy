@@ -73,7 +73,7 @@ Netty 的引导类为应用程序的网络层配置提供了容器，这涉及�
 - 第一组将只包含一个 ServerChannel，代表服务器自身的已绑定到某个本地端口的正在监听的套接字；
 - 而第二组将包含所有已创建的用来处理传入客户端连接（对于每个服务器已经接受的连接都有一个）的 Channel。
 
-下图表示服务器为何需要两个EventLoopGroup
+下图表示服务器为何需要两个EventLoopGroup，一个EventLoopGroup负责监听连接，另一个EventLoopGroup负责处理读写请求。
 
 <img src="https://ws1.sinaimg.cn/mw690/b7cbe24fly1g25fyejguxj20ke09l760.jpg"/>
 
